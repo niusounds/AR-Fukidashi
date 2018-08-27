@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // 床や壁のドット表示を無効
+        arSceneView.planeRenderer.isEnabled = false
+
         recButton.setOnClickListener {
             onRecButtonTap()
         }
